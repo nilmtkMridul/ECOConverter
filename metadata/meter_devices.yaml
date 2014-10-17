@@ -1,0 +1,102 @@
+smart_Meter:
+  description: >
+    1 Hz aggregate consumption data. Each measurement contains data 
+    on current, voltage, and phase shift for each of the three phases 
+    in the household.
+  sample_period: 1
+  max_sample_period: 1
+  days_per_month: 29
+  measurements:
+  - physical_quantity: powerallphases
+    type: apparent
+    upper_limit: 100000
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: powerl1
+    type: apparent
+    upper_limit: 100000
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: powerl2
+    type: apparent
+    upper_limit: 100000
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: powerl3
+    type: apparent
+    upper_limit: 100000
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: currentneutral
+    type: apparent
+    upper_limit: 20
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: currentl1
+    type: apparent
+    upper_limit: 20
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: currentl2
+    type: apparent
+    upper_limit: 20
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: currentl3
+    type: apparent
+    upper_limit: 20
+    lower_limit: 0
+  wireless: false
+  - physical_quantity: voltagel1
+    type: apparent
+    upper_limit: 400
+    lower_limit: 100
+  wireless: false
+  - physical_quantity: voltagel2
+    type: apparent
+    upper_limit: 400
+    lower_limit: 100
+  wireless: false
+  - physical_quantity: voltagel3
+    type: apparent
+    upper_limit: 400
+    lower_limit: 100
+  wireless: false
+  - physical_quantity: phaseanglevoltagel2l1
+    type: apparent
+    upper_limit: 400
+    lower_limit: 100
+  wireless: false
+  - physical_quantity: phaseanglevoltagel3l1
+    type: apparent
+    upper_limit: 90
+    lower_limit: -90
+  wireless: false
+  - physical_quantity: phaseanglecurrentvoltagel1
+    type: apparent
+    upper_limit: 90
+    lower_limit: -90
+  wireless: false
+  - physical_quantity: phaseanglecurrentvoltagel2
+    type: apparent
+    upper_limit: 90
+    lower_limit: -90
+  wireless: false
+  - physical_quantity: phaseanglecurrentvoltagel3
+    type: apparent
+    upper_limit: 90
+    lower_limit: -90
+  wireless: false
+
+plug:
+  description: >
+    1 Hz plug-level data measured from selected appliances.
+  sample_period: 1
+  max_sample_period: 1
+  days_per_month: 29
+  measurements:
+  - physical_quantity: power
+    type: active #Check active vs reactive vs apparant
+    upper_limit: 100000
+    lower_limit: 0
+  wireless: false

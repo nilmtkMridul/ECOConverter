@@ -1,0 +1,70 @@
+instance: 5
+original_name: house_5
+smart_meter_data:
+  days: 215
+  coverage: 99.05
+  period_start: 27.06.12
+  period_end: 31.01.13
+
+plugs:
+  1: &plug
+  2: *plug
+  3: *plug
+  4: *plug
+  5: *plug
+  6: *plug
+  7: *plug
+  8: *plug
+
+plug_data:
+  period_start: 27.06.12
+  period_end: 31.01.13
+
+appliances:
+- original_name: Tablet
+  days_covered: 218
+  instance: 1
+  coverage: 97.87
+  plug_num: [01] #Plug number
+
+- original_name: Coffee machine
+  days_covered: 218
+  instance: 1
+  coverage: 95.16
+  plug_num: [02] #Plug number
+
+- original_name: Fountain
+  days_covered: 71
+  instance: 1
+  coverage: 99.43
+  plug_num: [03] #Plug number
+
+- original_name: Microwave
+  days_covered: 218
+  instance: 1
+  coverage: 97.87
+  plug_num: [04] #Plug number
+
+- original_name: Fridge
+  days_covered: 218
+  instance: 1
+  coverage: 97.87
+  plug_num: [05] #Plug number
+
+- original_name: Entertainment
+  days_covered: 192
+  instance: 1
+  coverage: 89.14
+  plug_num: [06] #Plug number
+
+- original_name: PC
+  days_covered: 218
+  instance: 1
+  coverage: 97.87
+  plug_num: [07] #Plug number
+
+- original_name: Kettle
+  days_covered: 25
+  instance: 1
+  coverage: 76.64
+  plug_num: [08] #Plug number
